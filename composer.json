@@ -1,0 +1,16 @@
+{
+    "name": "erikh/museum-app",
+    "description": "Museum app. This is a small school project.",
+    "authors": [
+        {
+            "name": "AresBC",
+            "email": "62770044+AresBC@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "require": {}
+}
