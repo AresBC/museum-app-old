@@ -3,6 +3,7 @@
 use Src\Core\Router\Route;
 
 
+Route::view('', 'home');
 Route::view('home', 'home');
 Route::view('exhibits', 'exhibits');
 Route::view('imprint', 'imprint');

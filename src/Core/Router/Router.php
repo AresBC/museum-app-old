@@ -24,7 +24,7 @@ class Router implements IRouter
         $path = substr($path, 1);
 
         if (array_key_exists($path, Route::$routes)) {
-            echo (new View($path, $request->params));
+            echo(new View($path, $request->params));
             die;
         }
 
@@ -51,6 +51,10 @@ class Router implements IRouter
     {
         $requestUri = new URI($_SERVER['REQUEST_URI']);
 
+        if ($requestUri->pathElements === null) {
+            return new Request();
+        }
+
         $pathElements = $requestUri->pathElements;
 
         $controller = array_shift($pathElements);
@@ -61,10 +65,9 @@ class Router implements IRouter
             $params[$pathElements[$i++]] = $pathElements[$i++] ?? null;
         }
 
-        if (null !== $requestUri->queryElements)  {
+        if (null !== $requestUri->queryElements) {
             $params = array_merge($params, $requestUri->queryElements);
         }
-
 
         return new Request($controller, $action, $params);
     }
