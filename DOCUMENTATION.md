@@ -89,6 +89,7 @@
 
 ## Entwicklungsumgebung einrichten
 
+- install chrome
 - install node.js
 - install npm
 - install typescript
