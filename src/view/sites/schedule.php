@@ -6,9 +6,7 @@
 <h1>Schedule</h1>
 
 <style>
-    body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-    }
+
     #logs{
         border: solid 1px #bbb;
         padding: 16px;
