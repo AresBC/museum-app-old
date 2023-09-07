@@ -12,6 +12,7 @@
         </div>
     </div>
 </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LE0jrUBRHkk?si=3DTHJcqWig-ZrDlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 <canvas style="background-color: #0a1128" id="kaleidoscope"></canvas>
@@ -21,25 +22,25 @@
     window.onload = function () {
         new Kaleidoscope({
             selector: '#kaleidoscope',
-            edge: 12,
+            edge: 6,
             shapes: [
                 'circle',
-                'square',
-                'wave',
+                // 'square',
+                // 'wave',
                 'star',
-                'drop',
-                'oval',
-                'triangle',
-                'star',
-                'circle',
-                'square'
+                // 'drop',
+                // 'oval',
+                // 'triangle',
+                // 'star',
+                // 'circle',
+                // 'square'
             ],
             minSize: 5,
             maxSize: 100,
             color: ['#001F54', '#034078', '#1282A2', '#F9F4E0'],
             globalCompositeOperation: 'multiply',
             quantity: 50,
-            speed: 10,
+            speed: 5,
         });
     };
 </script>
