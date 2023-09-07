@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.66.1"
+    "sass": "^1.66.1",
+    "typescript": "^5.2.2"
   }
 }
