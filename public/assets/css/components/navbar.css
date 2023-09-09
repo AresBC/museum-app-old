@@ -1,3 +1,33 @@
-
+nav {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  backdrop-filter: blur(20px);
+}
+nav #nav-back {
+  position: absolute;
+  top: 0;
+  background-color: red;
+}
+nav img {
+  height: 65px;
+  transform: translateY(-25%);
+  margin-right: 3rem;
+}
+nav ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul li {
+  list-style: none;
+  padding: 35px 20px 0;
+}
+nav ul li:not(:first-child):hover {
+  border-bottom: 2px solid whitesmoke;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
 
 /*# sourceMappingURL=navbar.css.map */

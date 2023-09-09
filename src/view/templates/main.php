@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Museum App</title>
     <link rel="stylesheet" type="text/css" href="/public/assets/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/assets/css/layouts/default.css">
+    <link rel="stylesheet" type="text/css" href="/public/assets/css/app.css">
 </head>
 <body>
 <?php partial('navbar'); ?>
