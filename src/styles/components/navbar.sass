@@ -1,0 +1,30 @@
+nav
+  font-family: sans-serif
+  font-size: 1.6rem
+  backdrop-filter: blur(20px)
+
+  #nav-back
+    position: absolute
+    top: 0
+    background-color: red
+
+  img
+    height: 65px
+    transform: translateY(-25%)
+    margin-right: 3rem
+
+  ul
+    margin: 0
+    display: flex
+    flex-wrap: wrap
+
+    li
+      list-style: none
+      padding: 35px 20px 0
+
+      &:not(:first-child):hover
+        border-bottom: 2px solid whitesmoke
+
+      a
+        text-decoration: none
+        color: white

@@ -13,5 +13,8 @@
   "devDependencies": {
     "sass": "^1.66.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "ak-kaleidoscope": "^1.1.0"
   }
 }

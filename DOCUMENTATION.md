@@ -81,4 +81,23 @@
 
 <hr>
 
+
 ## API
+
+<hr>
+
+
+## Entwicklungsumgebung einrichten
+
+- install chrome
+- install node.js
+- install npm
+- install typescript
+- install Laragon
+- install PhpStorm
+- install git
+- clone project
+
+- run Laragon
+- configure Laragon root path
+- call localhost
