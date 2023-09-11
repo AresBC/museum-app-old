@@ -11,6 +11,7 @@ nav {
   font-size: 1.6rem;
   backdrop-filter: blur(20px);
   z-index: 100;
+  color: black;
 }
 nav #nav-back {
   position: fixed;
@@ -36,7 +37,7 @@ nav ul li:not(:first-child):hover {
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 /*# sourceMappingURL=navbar.css.map */
