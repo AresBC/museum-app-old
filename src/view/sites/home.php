@@ -24,7 +24,8 @@
     window.onload = function () {
         new Kaleidoscope({
             selector: '#kaleidoscope',
-            edge: 6,
+            // edge: 6,
+            edge: 3,
             shapes: [
                 'circle',
                 // 'square',
@@ -41,8 +42,10 @@
             maxSize: 100,
             color: ['#001F54', '#034078', '#1282A2', '#F9F4E0'],
             globalCompositeOperation: 'multiply',
-            quantity: 50,
-            speed: 5,
+            quantity: 20,
+            // quantity: 50,
+            // speed: 5,
+            speed: 0.5,
         });
     };
 </script>
