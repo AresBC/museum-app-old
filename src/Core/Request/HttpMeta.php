@@ -7,9 +7,9 @@ class HttpMeta
     public readonly string $host;
     public readonly string $connection;
     public readonly ?string $cacheControl;
-    public readonly string $secChUa;
-    public readonly string $secChUaMobile;
-    public readonly string $secChUaPlatform;
+    public readonly ?string $secChUa;
+    public readonly ?string $secChUaMobile;
+    public readonly ?string $secChUaPlatform;
     public readonly string $userAgent;
     public readonly string $upgradeInsecureRequests;
     public readonly string $accept;
@@ -23,9 +23,9 @@ class HttpMeta
         $this->host = $_SERVER['HTTP_HOST'];
         $this->connection = $_SERVER['HTTP_CONNECTION'];
         $this->cacheControl = $_SERVER['HTTP_CACHE_CONTROL'] ?? null;
-        $this->secChUa = $_SERVER['HTTP_SEC_CH_UA'];
-        $this->secChUaMobile = $_SERVER['HTTP_SEC_CH_UA_MOBILE'];
-        $this->secChUaPlatform = $_SERVER['HTTP_SEC_CH_UA_PLATFORM'];
+        $this->secChUa = $_SERVER['HTTP_SEC_CH_UA'] ?? null;
+        $this->secChUaMobile = $_SERVER['HTTP_SEC_CH_UA_MOBILE'] ?? null;
+        $this->secChUaPlatform = $_SERVER['HTTP_SEC_CH_UA_PLATFORM'] ?? null;
         $this->upgradeInsecureRequests = $_SERVER['HTTP_UPGRADE_INSECURE_REQUESTS'];
         $this->userAgent = $_SERVER['HTTP_USER_AGENT'];
         $this->accept = $_SERVER['HTTP_ACCEPT'];
