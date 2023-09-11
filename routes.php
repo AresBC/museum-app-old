@@ -6,6 +6,7 @@ use Src\Core\Router\Route;
 Route::view('', 'home');
 Route::view('home', 'home');
 Route::view('exhibits', 'exhibits');
+Route::view('booking', 'booking');
 Route::view('imprint', 'imprint');
 Route::view('privacy', 'privacy');
 Route::view('schedule', 'schedule');
